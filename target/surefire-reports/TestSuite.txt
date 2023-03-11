@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 4, Time elapsed: 12.727 s <<< FAILURE! - in TestSuite
+Landingpage(com.examarly.HomePageWeb)  Time elapsed: 0.018 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'Kishores-MacBook-Air.local', ip: 'fe80:0:0:0:475:5186:594e:1496%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8df3ee1ef6ec492f7f4dc8e25dee6617, findElement {using=xpath, value=//div[@class='homepage-landing-section-hero-button join-community btn-stp-cpy'][contains(text(),'Get Started')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/w2/tnn1nt2x1x7...}, goog:chromeOptions: {debuggerAddress: localhost:55721}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55721/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8df3ee1ef6ec492f7f4dc8e25dee6617
+	at com.examarly.HomePageWeb.Landingpage(HomePageWeb.java:50)
+
+LoginPage(com.examarlyRewardsModule.RewardsWeb)  Time elapsed: 0.006 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'Kishores-MacBook-Air.local', ip: 'fe80:0:0:0:475:5186:594e:1496%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.6', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88159c5e92adee29f0af68ab0cb0e80b, findElement {using=xpath, value=//div[@class='homepage-landing-section-hero-button start-todays-prep btn-stp-cpy']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/w2/tnn1nt2x1x7...}, goog:chromeOptions: {debuggerAddress: localhost:55776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55776/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 88159c5e92adee29f0af68ab0cb0e80b
+	at com.examarlyRewardsModule.RewardsWeb.LoginPage(RewardsWeb.java:28)
+
+LoginPage(com.examarlyLogin.HomePageLoginWeb)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at com.examarlyLogin.HomePageLoginWeb.LoginPage(HomePageLoginWeb.java:31)
+
